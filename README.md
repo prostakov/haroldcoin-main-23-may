@@ -11,6 +11,10 @@ brew update
 brew install prostakov/my/boost@1.57
 brew install boost@1.57
 
+#Ensure current boost version points to 1.57
+brew link boost@1.57 --force
+brew --prefix boost  
+
 ### Build on OSX
 
 chmod +x autogen.sh
