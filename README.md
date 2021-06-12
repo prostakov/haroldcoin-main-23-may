@@ -1,3 +1,7 @@
+### General prerequisites
+
+brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf librsvg libevent qt5
+
 ### Prerequisites - openssl@1.0
 
 brew tap rbenv/tap
@@ -22,4 +26,4 @@ chmod +x share/genbuild.sh
 chmod +x src/leveldb/build_detect_platform 
 ./autogen.sh 
 ./configure LDFLAGS='-L/usr/local/opt/openssl@1.0/lib -L/usr/local/opt/boost@1.57/lib' CPPFLAGS='-I/usr/local/opt/openssl@1.0/include -I/usr/local/opt/boost@1.57/include' PKG_CONFIG_PATH='/usr/local/opt/openssl@1.0/lib/pkgconfig:/usr/local/opt/boost@1.57/lib/pkgconfig' --with-gui=qt5  --with-boost-libdir='/usr/local/opt/boost@1.57/lib'
-make
+make deploy
